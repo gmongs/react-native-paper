@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Platform, I18nManager, View, Image, StyleSheet } from 'react-native';
-import MaterialCommunityIcon from '../MaterialCommunityIcon';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const AppbarBackIcon = ({ size, color }: { size: number; color: string }) => {
   const iosIconSize = size - 3;
@@ -25,8 +25,8 @@ const AppbarBackIcon = ({ size, color }: { size: number; color: string }) => {
       />
     </View>
   ) : (
-    <MaterialCommunityIcon
-      name="arrow-left"
+    <Ionicons
+      name="md-arrow-back-outline"
       color={color}
       size={size}
       direction={I18nManager.isRTL ? 'rtl' : 'ltr'}
