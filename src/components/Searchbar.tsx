@@ -148,6 +148,7 @@ const Searchbar = React.forwardRef<TextInputHandles, Props>(
 
     const handleClearPress = () => {
       root.current?.clear();
+      root.current?.focus()
       rest.onChangeText?.('');
     };
 
