@@ -20,7 +20,7 @@ let MaterialCommunityIcons: React.ComponentType<
 
 try {
   // Optionally require vector-icons
-  MaterialCommunityIcons = require('react-native-vector-icons/MaterialCommunityIcons')
+  MaterialCommunityIcons = require('react-native-vector-icons/Ionicons')
     .default;
 } catch (e) {
   let isErrorLogged = false;
